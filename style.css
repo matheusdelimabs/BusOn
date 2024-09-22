@@ -1,68 +1,176 @@
-body {
-    font-family: 'Roboto', sans-serif;
+/* Estilos globais */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
 header {
-    background-color: #00695c;
-    padding: 10px;
+    background-color: #1e88e5;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #fff;
 }
 
-nav ul {
-    list-style-type: none;
+header h1 {
+    font-size: 1.5rem;
+}
+
+header ul {
+    list-style: none;
     display: flex;
-    gap: 20px;
 }
 
-nav a {
+header ul li {
+    margin-left: 15px;
+}
+
+header ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 1rem;
 }
 
-#menu-toggle {
+header #menu-toggle {
     display: none;
 }
 
-h1, h2 {
-    margin: 0;
-}
-
-#home, #map, #emergency {
+/* Início - BusOn */
+#home {
     padding: 20px;
     text-align: center;
 }
 
-input[type="text"] {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
+#home h2 {
+    font-size: 1.8rem;
+    color: #1e88e5;
+    margin-bottom: 20px;
 }
 
-button.search-btn, button.emergency-btn {
-    background-color: #43a047;
+#home input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: 2px solid #1e88e5;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    background-color: #1e88e5;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-button.search-btn:hover, button.emergency-btn:hover {
-    background-color: #2e7d32;
+.search-btn:hover {
+    background-color: #1565c0;
 }
 
-footer {
-    text-align: center;
+/* Mapa Interativo */
+#map {
     padding: 20px;
-    background-color: #00695c;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
+    text-align: center;
+}
+
+#map h2 {
+    font-size: 1.8rem;
+    color: #1e88e5;
+    margin-bottom: 20px;
+}
+
+#map-container {
     width: 100%;
+    height: 400px;
+    background-color: #e0e0e0;
+    border: 2px solid #1e88e5;
+}
+
+/* Seção de Emergência */
+#emergency {
+    padding: 20px;
+    text-align: center;
+}
+
+#emergency h2 {
+    font-size: 1.8rem;
+    color: #1e88e5;
+    margin-bottom: 20px;
+}
+
+.emergency-btn {
+    padding: 10px 20px;
+    background-color: #d32f2f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.emergency-btn:hover {
+    background-color: #b71c1c;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1e88e5;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #1e88e5;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    header #menu-toggle {
+        display: block;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+    header #menu-toggle.open + ul {
+        display: flex;
+    }
+
+    header ul li {
+        margin: 10px 0;
+    }
+
+    #home input[type="text"] {
+        width: 100%;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
 }
