@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BusOn</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #2b7a78;
-        }
-        /* Estilo para smartphones */
-        @media only screen and (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Bem-vindo ao BusOn</h1>
-    <p>Este é o começo do site otimizado para smartphones.</p>
-</body>
-</html>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#horarios">Horários</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+                <li><a href="#emergencia">Emergência</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Bem-vindo ao BusOn</h1>
+        <p>O app de transporte que traz segurança e praticidade para o seu dia a dia.</p>
+        <img src="bus_image.jpg" alt="Imagem de ônibus" class="banner">
+    </section>
+
+    <section id="horarios">
+        <h2>Horários de Ônibus</h2>
+        <p>Verifique os horários dos próximos ônibus:</p>
+        <ul class="bus-schedule">
+            <li>Linha 123 - 10:30</li>
+            <li>Linha 456 - 11:00</li>
+            <li>Linha 789 - 11:
