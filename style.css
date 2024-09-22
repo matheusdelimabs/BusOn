@@ -1,0 +1,101 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #2b7a78;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+}
+
+h1, h2 {
+    color: #2b7a78;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.bus-schedule {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bus-schedule li {
+    background-color: #d4f1f4;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #3aafa9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2b7a78;
+}
+
+.emergency-button {
+    background-color: #e63946;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2b7a78;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos específicos para smartphones */
+@media only screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .bus-schedule li {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
