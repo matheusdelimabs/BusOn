@@ -30,9 +30,7 @@
 
     <section id="map">
         <h2>Mapa Interativo</h2>
-        <div id="map-container">
-            <!-- API do Google Maps Aqui -->
-        </div>
+        <div id="map-container"></div>
     </section>
 
     <section id="emergency">
@@ -44,6 +42,10 @@
         <p>© 2024 BusOn - Segurança no Transporte Público</p>
     </footer>
 
+    <!-- Google Maps API -->
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
