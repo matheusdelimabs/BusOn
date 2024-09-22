@@ -1,33 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BusOn</title>
+    <title>BusOn - Horários de Ônibus</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <h1>BusOn</h1>
+            <ul id="menu">
                 <li><a href="#home">Início</a></li>
-                <li><a href="#horarios">Horários</a></li>
-                <li><a href="#localizacao">Localização</a></li>
-                <li><a href="#emergencia">Emergência</a></li>
+                <li><a href="#map">Mapa</a></li>
+                <li><a href="#emergency">Emergência</a></li>
             </ul>
+            <button id="menu-toggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
     </header>
 
     <section id="home">
-        <h1>Bem-vindo ao BusOn</h1>
-        <p>O app de transporte que traz segurança e praticidade para o seu dia a dia.</p>
-        <img src="bus_image.jpg" alt="Imagem de ônibus" class="banner">
+        <h2>Encontre Seu Ônibus</h2>
+        <input type="text" placeholder="Digite a linha ou localização">
+        <button class="search-btn">Pesquisar</button>
     </section>
 
-    <section id="horarios">
-        <h2>Horários de Ônibus</h2>
-        <p>Verifique os horários dos próximos ônibus:</p>
-        <ul class="bus-schedule">
-            <li>Linha 123 - 10:30</li>
-            <li>Linha 456 - 11:00</li>
-            <li>Linha 789 - 11:
+    <section id="map">
+        <h2>Mapa Interativo</h2>
+        <div id="map-container">
+            <!-- API do Google Maps Aqui -->
+        </div>
+    </section>
+
+    <section id="emergency">
+        <h2>Emergência</h2>
+        <button class="emergency-btn">Alerta de Emergência</button>
+    </section>
+
+    <footer>
+        <p>© 2024 BusOn - Segurança no Transporte Público</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
