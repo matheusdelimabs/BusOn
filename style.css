@@ -1,101 +1,68 @@
-/* Estilo geral */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f0f0f0;
 }
 
 header {
-    background-color: #2b7a78;
-    color: white;
-    padding: 15px;
-    text-align: center;
+    background-color: #00695c;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    display: flex;
+    gap: 20px;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: white;
+nav a {
+    color: #fff;
     text-decoration: none;
 }
 
-section {
-    padding: 20px;
-    margin: 10px;
+#menu-toggle {
+    display: none;
 }
 
 h1, h2 {
-    color: #2b7a78;
+    margin: 0;
 }
 
-.banner {
-    width: 100%;
-    height: auto;
-    margin: 20px 0;
+#home, #map, #emergency {
+    padding: 20px;
+    text-align: center;
 }
 
-.bus-schedule {
-    list-style-type: none;
-    padding: 0;
-}
-
-.bus-schedule li {
-    background-color: #d4f1f4;
+input[type="text"] {
+    width: 80%;
     padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    margin: 10px 0;
 }
 
-button {
-    background-color: #3aafa9;
-    color: white;
+button.search-btn, button.emergency-btn {
+    background-color: #43a047;
+    color: #fff;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #2b7a78;
-}
-
-.emergency-button {
-    background-color: #e63946;
+button.search-btn:hover, button.emergency-btn:hover {
+    background-color: #2e7d32;
 }
 
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #2b7a78;
-    color: white;
+    padding: 20px;
+    background-color: #00695c;
+    color: #fff;
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-/* Estilos específicos para smartphones */
-@media only screen and (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-    
-    .bus-schedule li {
-        font-size: 14px;
-    }
-
-    button {
-        width: 100%;
-    }
 }
